@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-  User.create!(name: Faker::Name.name,
-  handle: Faker::Internet.username,
+  user = User.create!(name: Faker::Name.name,
+  handle: Faker::Internet.user_name,
   email: Faker::Internet.email)
 
-  3.times do
+  rand(1..10).times do
     Tweet.create!(body: Faker::Hipster.sentence,
     user_id: user.id)
   end
