@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if User.exists?(params[:id])
       user = User.find(params[:id])
       render template: 'users/show.html.erb', locals: {
-        user: user
+        user: user,
       }
     else
       render html: "User Not Found", status: 404
