@@ -1,4 +1,15 @@
 <section class='all-users'>
   <header>
-    <h3>All Users</h3>
+    <h3>All <%= users.count %> Users</h3>
   </header>
+
+  <% users.each do |user| %>
+    <p> <%= link_to user.name, user_path(user) %> </p>
+  <% end %>
+<article class='one-user-info'
+  <p class='header'>
+  </p>
+  </article>
+      </p>
+    </article>
+</section>
