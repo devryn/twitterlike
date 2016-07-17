@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   def create
     user = User.new
     user.name = params[:user][:name]
-    user.handle = params[:user][:handle]
+    user.handle = "@" + params[:user][:handle]
     user.email = params[:user][:email]
     if user.save
       redirect_to user_path(user)
