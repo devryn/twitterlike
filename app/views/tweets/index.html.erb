@@ -8,19 +8,8 @@
 </div>
 
   <% tweets.each do |tweet| %>
-    <p> <%= tweet.user_id.name, tweet.user.handle %>
-      <%= link_to tweet.body, tweet_path(tweet) %> </p>
+    <div class='one-tweet'><p> <%= tweet.user.handle %></p>
+    <p><%= link_to tweet.body, tweet_path(tweet) %> </p>
   <% end %>
-<article class='one-tweet-info'
-  <p class='header'>
-    <div = 'one-users-tweet'>
-    </div>
-  </p>
-  </article>
-    <article class='tweet'>
-      <p class='body'>
-        <div = 'one-tweet'>
-        </div>
-      </p>
-    </article>
+</div>
 </section>

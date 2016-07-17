@@ -1,7 +1,7 @@
+<div class="all_form">
 <div class="row">
   <h4><%= form_title %></h4>
 </div>
-
 <div class="row">
   <% if tweet.errors.any? %>
     <% tweet.errors.full_messages.each do |msg| %>
@@ -26,4 +26,6 @@
         <%= f.submit %>
       </div>
     </div>
+  </div>
+</div>
     <% end %>

@@ -5,7 +5,7 @@
   </header>
   <p>
   <% users.each do |user| %>
-    <p> <%= link_to user.name, user_path(user) %> </p>
+    <p> <%= link_to user.name, user_path(user) %> <%= user.handle %> </p>
   <% end %>
 <article class='one-user-info'
   <p class='header'>
