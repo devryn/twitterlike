@@ -1,4 +1,4 @@
-<section class="user-form">
+
 <div class="row">
   <h4><%= form_title %></h4>
 </div>
@@ -12,18 +12,21 @@
 </div>
   <div class="user-content">
     <%= form_for(user) do |f| %>
-      <div class="row">
+
         <div class="input-group">
           <label for="name">Name</label>
+          <p>
           <%= f.text_field :name, placeholder: "What's your name?" %>
         </div>
-      </div>
+
       <div class="input-group">
         <label for="handle">Handle</label>
+        <p>
         <%= f.text_area :handle, placeholder: "@handle" %>
       </div>
       <div class="input-group">
         <label for="email">Email</label>
+        <p>
         <%= f.text_area :email, placeholder: "What's your email address?" %>
       </div>
       <div class="row">

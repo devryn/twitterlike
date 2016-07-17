@@ -11,6 +11,7 @@
 </div>
 
     <%= form_for(tweet) do |f| %>
+    <div class="row">
     <div class="input-group">
       <label for="id">User</label>
       <%= f.select :user_id, options_from_collection_for_select(User.all, :id, :name) %>
@@ -27,5 +28,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
     <% end %>
