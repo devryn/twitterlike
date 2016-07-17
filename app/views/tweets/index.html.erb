@@ -1,11 +1,15 @@
 <section class='all-tweets'>
   <header>
-    <h3>All <%= tweets.count %> Tweets</h3>
+    <h3>All <%= tweets.count %> Tweets
     <button type="button" class="btn btn-default"><%= link_to "New Tweet", new_tweet_path(tweets) %></button>
-  </header>
+  </h3>
+</header>
+</div>
+</div>
 
   <% tweets.each do |tweet| %>
-    <p> <%= link_to tweet.body, tweet_path(tweet) %> </p>
+    <p> <%= tweet.user_id.name, tweet.user.handle %>
+      <%= link_to tweet.body, tweet_path(tweet) %> </p>
   <% end %>
 <article class='one-tweet-info'
   <p class='header'>

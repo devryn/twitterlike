@@ -3,7 +3,7 @@
     <h3>All <%= users.count %> Users</h3>
     <button type="button" class="btn btn-default"><%= link_to "New User", new_user_path(users) %></button>
   </header>
-
+  <p>
   <% users.each do |user| %>
     <p> <%= link_to user.name, user_path(user) %> </p>
   <% end %>

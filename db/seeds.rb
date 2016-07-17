@@ -8,7 +8,7 @@
 
 10.times do
   user = User.create!(name: Faker::Name.name,
-  handle: Faker::Internet.user_name,
+  handle: "@#{Faker::Internet.user_name}",
   email: Faker::Internet.email)
 
   rand(1..10).times do
