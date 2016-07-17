@@ -1,6 +1,7 @@
 <section class='all-tweets'>
   <header>
     <h3>All <%= tweets.count %> Tweets</h3>
+    <button type="button" class="btn btn-default"><%= link_to "New Tweet", new_tweet_path(tweets) %></button>
   </header>
 
   <% tweets.each do |tweet| %>

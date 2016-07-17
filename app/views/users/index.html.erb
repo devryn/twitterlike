@@ -1,6 +1,7 @@
 <section class='all-users'>
   <header>
     <h3>All <%= users.count %> Users</h3>
+    <button type="button" class="btn btn-default"><%= link_to "New User", new_user_path(users) %></button>
   </header>
 
   <% users.each do |user| %>

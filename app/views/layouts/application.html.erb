@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title><%= local_assigns[:title] || "Twitter" %></title>
+      <title><%= local_assigns[:title] || 'Twitter' %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
+    <header class='main-header'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-4'>
               <h1>Twitter</h1>
             </div>
-            <div class="col-sm-4">
-              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/945px-Twitter_bird_logo_2012.svg.png"/>
+            <div class='col-xs-3 col-xs-offset-1'>
+              <img src='https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/945px-Twitter_bird_logo_2012.svg.png'/>
             </div>
-            <div class="col-sm-4">
-            <%= render "shared/nav" %>
+            <div class='col-xs-4'>
+            <%= render 'shared/nav' %>
           </div>
           </div>
         </div>
       </div>
     </header>
+    <body>
     <div class='container'>
       <div class='row'>
-        <div class='col-sm-12'>
+        <div class='col-xs-12'>
           <%= yield %>
         </div>
       </div>

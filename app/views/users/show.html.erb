@@ -1,6 +1,7 @@
 <section class='one-user'>
   <header>
     <h3><%= user.name %>'s Profile</h3>
+    <button type="button" class="btn btn-default"><%= link_to "Edit Profile", edit_user_path(user) %></button>
   </header>
   <p>
     <%= "No Tweets" if user.tweets.empty? %>
